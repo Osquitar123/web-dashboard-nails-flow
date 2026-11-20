@@ -33,4 +33,6 @@ Name new work branches `type/short-change-description`. Use the same types as fo
 
 Write commit messages in English and lowercase using `type: short description`. Use a bare type such as `feat`, `fix`, or `docs`. Examples include `fix: redirect active sessions to the dashboard` and `docs: document commit conventions`.
 
-Open PRs against `main`, explain what changed and how you verified it, link any related issue, and include screenshots when the UI changes.
+Open PRs from work branches into `staging`. To promote integrated changes, open a PR from `staging` into `main`.
+
+Use the [repository PR template](.github/pull_request_template.md) even when submitting from a CLI or API. Fill it from the branch diff and actual verification results. Link the applicable spec and related issues, include screenshots for UI changes, and mark pending checks or inapplicable sections explicitly.

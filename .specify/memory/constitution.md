@@ -1,9 +1,3 @@
-<!--
-Informe de sincronización
-- Versión 1.2.0 → 1.3.0.
-- Flujo de desarrollo y revisión incorpora la convención de nombres de ramas.
-- Sin cambios de principios, secciones añadidas o eliminadas ni tareas pendientes.
--->
 # Constitución de NailFlow
 
 ## Principios fundamentales
@@ -65,6 +59,12 @@ del código que se entrega al navegador.
 5. Las nuevas ramas de trabajo DEBEN seguir el formato `tipo/descripcion-del-cambio`
    en inglés y en minúsculas, con guiones entre palabras. Los directorios de
    especificaciones conservan el formato `specs/NNN-nombre-breve/`.
+6. Los pull requests (PR o MR) de ramas de trabajo DEBEN apuntar a `staging`.
+   Para promover los cambios integrados, abrir un PR de `staging` hacia `main`.
+7. Al crear un pull request, se DEBE usar la
+   [plantilla del repositorio](../../.github/pull_request_template.md) y completar
+   sus secciones con los cambios, verificaciones y evidencias reales de la rama.
+   Enlazar la especificación cuando aplique e indicar qué quedó pendiente.
 
 ## Gobernanza
 
@@ -77,4 +77,4 @@ Actualizar la fecha de enmienda y la versión con SemVer. Usar una versión mayo
 si cambia una regla de forma incompatible, menor si se añade o amplía una regla,
 y de parche para aclaraciones que conservan su significado.
 
-**Versión** · 1.3.0 | **Adopción** · 2026-11-20 | **Última enmienda** · 2026-11-20
+**Versión** · 1.4.0 | **Adopción** · 2026-11-20 | **Última enmienda** · 2026-11-20
