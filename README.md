@@ -66,3 +66,11 @@ npm run typecheck
 npm run build
 npm run start
 ```
+
+## Desarrollo guiado por especificaciones
+
+Usamos GitHub Spec Kit v1.4.3 para cambios con requisitos o criterios de aceptación que conviene acordar antes de implementar. La [constitución](.specify/memory/constitution.md) reúne los principios del proyecto y cada cambio se documenta en `specs/`.
+
+En el chat de Codex, ejecuta `$speckit-specify`, `$speckit-plan` y `$speckit-tasks` en ese orden. Usa `$speckit-analyze` para revisar la coherencia y resuelve los hallazgos antes de invocar `$speckit-implement`. En el PR, enlaza la especificación y registra la evidencia de sus criterios de aceptación.
+
+Consulta las [convenciones de especificación](specs/AGENTS.md) para redactar o revisar un cambio. El [piloto del dashboard](specs/001-dashboard-ux/spec.md) está en borrador mientras se replantea su alcance. Para retomarlo en una copia nueva, selecciona su carpeta con `SPECIFY_FEATURE_DIRECTORY=specs/001-dashboard-ux` en el entorno desde el que se inicia Codex.
